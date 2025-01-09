@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; URL=./index.html" />
+    <script type="text/javascript">
+      var pathname = window.location.pathname;
+      if (!pathname.includes('/index.html')) {
+        window.location.href = './index.html' + window.location.search + window.location.hash;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,23 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.div-animate {
+  padding: 200px;
+}
+
+.div-animate-single {
+  padding: 100px;
+}
+
+.animate-scroll {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 700s linear infinite;
+  width: max-content;
+}

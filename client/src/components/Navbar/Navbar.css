@@ -1,0 +1,112 @@
+
+.navbar {
+  background-color: #070250;
+  height: 4rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 60;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links div {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links div:hover {
+  color: #00e3dc;
+}
+
+.toggle-bar {
+  display: none;
+}
+
+.buttons-above {
+  display: flex;
+  gap: 1rem;
+}
+
+.buttons-above .login-button,
+.buttons-above .register-button {
+  background-color: #070250;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons-above .login-button:hover,
+.buttons-above .register-button:hover {
+  background-color: #00e3dc;
+  color: #070250;
+}
+
+.toggle-buttons {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.toggle-buttons .login-button,
+.toggle-buttons .register-button {
+  background-color: #070250;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-buttons .login-button:hover,
+.toggle-buttons .register-button:hover {
+  background-color: #00e3dc;
+  color: #070250;
+}
+
+@media (max-width: 1100px) {
+  .nav-links {
+    display: none; 
+  }
+
+  .toggle-bar {
+    display: block;
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: #070250;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    z-index: 50;
+  }
+
+  .toggle-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .buttons-above {
+    display: none; 
+  }
+}

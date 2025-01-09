@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: #fff;
+}
+
+.reg {
+  padding-left: 35px;
+}
+
+.login-reg {
+  border-radius: 20px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-text span {
+  transition: opacity 0.5s ease;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.hero-text span {
+  display: inline-block;
+  animation: fadeInOut 4s infinite;
+}
+
+.hero-text2 {
+  position: absolute;
+  top: 47%;
+  left: 10%;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.hero-text-new {
+  position: absolute;
+  top: 51.5%;
+  left: 10%;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-text3 {
+  position: absolute;
+  top: 57%;
+  left: 10%;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-text, .hero-text2, .hero-text, .hero-text-new {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.feed:hover {
+  opacity: 0.9;
+  /* background: rgba(255, 255, 0, 0.4); */
+}
+
+.myMap {
+  background-color: #070250;
+}

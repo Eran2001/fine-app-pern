@@ -1,0 +1,12 @@
+.no-match {
+    display: flex;
+    justify-content: center;
+    margin-top: 350px;
+    height: 100vh;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2934b1;
+    background-color: #fff;
+    text-align: center;
+    padding: 0 1rem;
+}
