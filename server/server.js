@@ -105,14 +105,12 @@ app.post("/api/login", async (req, res) => {
     ]);
     const user = result.rows[0];
     if (!user || user.password !== password) {
-      alert("Invalid email or password");
       return res.status(400).json({ message: "Invalid email or password" });
     }
     const token = jwt.sign({ id: user.id }, secretKey, { expiresIn: "1h" });
     res.json({ token });
   } catch (error) {
     res.status(500).json({ message: "Error logging in" });
-    alert("Error logging in");
   }
 });
 

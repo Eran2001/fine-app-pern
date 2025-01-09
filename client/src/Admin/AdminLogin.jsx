@@ -28,7 +28,7 @@ const AdminLogin = () => {
 
       const data = await response.json();
       localStorage.setItem('adminToken', data.token);
-      navigate('/admin-dashboard'); // Redirect to admin dashboard
+      navigate('/admin-dashboard');
     } catch (error) {
       setError(error.message);
     }
